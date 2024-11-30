@@ -4,7 +4,23 @@ This repository is a minimal provider setup for [Market Router](https://api.mark
 
 You can use it as a base to enhance the functionalities of the provider, improve bidding strategies, etc.
 
-## Main Applications
+## What is an LLM Router?
+
+An LLM (Large Language Model) Router is a system designed to manage and direct requests to various language models based on specific criteria such as cost, performance, or model capabilities. It acts as an intermediary that intelligently routes requests to the most appropriate language model, optimizing for factors like response time, accuracy, and cost-effectiveness.
+
+### How it Works
+
+1. **Request Handling**: The LLM Router receives requests from clients, which typically include a prompt or query that needs processing by a language model.
+
+2. **Model Selection**: Based on predefined criteria or dynamic analysis, the router selects the most suitable language model to handle the request. This selection can be influenced by factors such as the complexity of the query, the required response time, and the cost associated with using a particular model.
+
+3. **Routing**: Once a model is selected, the router forwards the request to the chosen language model. This involves managing API calls and ensuring that the request is formatted correctly for the target model.
+
+4. **Response Aggregation**: After the language model processes the request, the router collects the response and may perform additional processing, such as aggregating results from multiple models or applying post-processing filters.
+
+5. **Response Delivery**: The final response is sent back to the client, completing the request cycle. The router ensures that the response meets any specified requirements, such as format or latency constraints.
+
+By using an LLM Router, organizations can efficiently manage multiple language models, optimize resource usage, and improve the overall performance of their language processing systems.
 
 The Minimal Provider LLM Router serves as a foundational setup for deploying language model services in a cloud environment. Its main applications include:
 
