@@ -4,6 +4,20 @@ This repository is a minimal provider setup for [Market Router](https://api.mark
 
 You can use it as a base to enhance the functionalities of the provider, improve bidding strategies, etc.
 
+## Main Applications
+
+The Minimal Provider LLM Router serves as a foundational setup for deploying language model services in a cloud environment. Its main applications include:
+
+- **Bidding Strategy Implementation**: The router can be used to implement and test various bidding strategies in a market environment, allowing providers to optimize their proposals based on cost, performance, and other factors.
+
+- **API Gateway for Language Models**: It acts as an API gateway that facilitates communication between clients and language models, supporting multiple models and configurations.
+
+- **Scalable Deployment**: Designed to be deployed on AWS using Terraform, it provides a scalable infrastructure that can handle varying loads and ensure high availability.
+
+- **Authentication and Security**: The setup includes mechanisms for API authentication and secure handling of API keys, ensuring that only authorized requests are processed.
+
+- **Customizable and Extensible**: The router is built to be easily customizable and extensible, allowing developers to add new features, integrate additional services, and tailor the setup to specific needs.
+
 The current functionalities are the following:
 - Bid strategy: It scans for open instances and creates a proposal with the minimum bid allowed ($0.01).
 
