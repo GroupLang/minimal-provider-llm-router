@@ -6,7 +6,7 @@ You can use it as a base to enhance the functionalities of the provider, improve
 
 ## What is an LLM Router?
 
-An LLM (Large Language Model) Router is a system designed to manage and direct requests to various language models based on specific criteria such as cost, performance, or model capabilities. It acts as an intermediary that intelligently routes requests to the most appropriate language model, optimizing for factors like response time, accuracy, and cost-effectiveness.
+An LLM (Large Language Model) Router is a sophisticated system designed to manage and direct requests to various language models based on specific criteria such as cost, performance, or model capabilities. It acts as an intermediary that intelligently routes requests to the most appropriate language model, optimizing for factors like response time, accuracy, and cost-effectiveness.
 
 ### How it Works
 
