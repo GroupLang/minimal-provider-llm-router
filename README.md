@@ -11,6 +11,44 @@ The current functionalities are the following:
 
 - Completions endpoint: OpenAI-compatible wrapper with the model provided in the configuration file.
 
+## Dependencies
+
+This project relies on several Python packages and other dependencies to function correctly. The main dependencies are listed in the `requirements.txt` file. These include:
+
+- `loguru`: For logging.
+- `openai`: To interact with OpenAI's API.
+- `fastapi`: A modern, fast (high-performance) web framework for building APIs with Python 3.6+.
+- `uvicorn`: A lightning-fast ASGI server implementation, using `uvloop` and `httptools`.
+- `boto3`: The Amazon Web Services (AWS) SDK for Python, which allows Python developers to write software that makes use of Amazon services.
+- `aiobotocore`: A library that provides an asynchronous interface to AWS services.
+- `notdiamond`: A package for interacting with the NotDiamond API.
+
+### Managing Dependencies
+
+To manage dependencies, you should use a virtual environment. This ensures that the dependencies required by this project are isolated from other Python projects you are working on. You can create a virtual environment and install the dependencies with the following commands:
+
+```shell
+python3.11 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Resolving Dependency Conflicts
+
+Dependency conflicts can occur when different packages require different versions of the same dependency. To resolve these conflicts, you can:
+
+1. **Use a Virtual Environment**: Always use a virtual environment to avoid conflicts with other projects.
+
+2. **Check for Conflicts**: Use tools like `pipdeptree` to visualize the dependency tree and identify conflicts.
+
+3. **Update Packages**: Sometimes updating all packages to their latest versions can resolve conflicts. Use `pip list --outdated` to see which packages are outdated and `pip install --upgrade <package>` to update them.
+
+4. **Pin Versions**: In `requirements.txt`, specify exact versions of packages that are known to work together. This can prevent conflicts when installing dependencies.
+
+5. **Use `pip-tools`**: This tool helps to manage dependencies by allowing you to specify only the top-level dependencies in a `requirements.in` file, and then compile a `requirements.txt` file with all dependencies pinned to specific versions.
+
+By following these practices, you can effectively manage and resolve dependency conflicts in your project.
+
 ## Installation
 
 1. **Clone the repository**
