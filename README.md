@@ -215,3 +215,4 @@ Having a static endpoint is important to ensure that deployments do not affect t
 Having said that, one needs to add the DNS name record to the domain managed in its domain-name registrar of choice. Doing this will complete the setup of the DNS name and the minimal provider app will have a static completions endpoint. Make sure to test the completions endpoint before submitting proposals.
 
 Lastly, do not forget to update the secret `APP_COMPLETIONS_ENDPOINT` in AWS Secrets Manager and redeploy the API.
+Temporary change to test PR
