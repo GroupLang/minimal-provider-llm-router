@@ -29,7 +29,7 @@ The current functionalities are the following:
 
 ### Why HTTPX is used instead of Requests
 
-HTTPX is used in this project instead of the traditional `requests` library because it provides several advantages, particularly for asynchronous programming. HTTPX supports both synchronous and asynchronous requests, making it more versatile for modern Python applications that require non-blocking I/O operations. This is especially useful in scenarios where multiple requests need to be handled concurrently, improving the overall efficiency and performance of the application.
+HTTPX is used in this project instead of the traditional `requests` library because it provides several advantages, particularly for asynchronous programming. HTTPX supports both synchronous and asynchronous requests, making it more versatile for modern Python applications that require non-blocking I/O operations. This is especially useful in scenarios where multiple requests need to be handled concurrently, improving the overall efficiency and performance of the application. Additionally, HTTPX offers a more modern API design, built-in support for HTTP/2, and better connection pooling, which can lead to performance improvements in high-load scenarios.
 
     - **Set up environment variables**
 
