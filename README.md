@@ -26,8 +26,13 @@ The current functionalities are the following:
    pip install -r requirements.txt
    ```
 3. **Set up environment space**
+
+### Why HTTPX is used instead of Requests
+
+HTTPX is used in this project instead of the traditional `requests` library because it provides several advantages, particularly for asynchronous programming. HTTPX supports both synchronous and asynchronous requests, making it more versatile for modern Python applications that require non-blocking I/O operations. This is especially useful in scenarios where multiple requests need to be handled concurrently, improving the overall efficiency and performance of the application.
+
     - **Set up environment variables**
-        
+
         Copy the sample environment file and configure it as per your requirements (see more [here](#setting-up-configuration-variables)).
 
         ```shell
